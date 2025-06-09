@@ -10,9 +10,9 @@
   </head>
   <body class="bg-dark" style="height: 1000px;">
   <div class="container-fluid ">
-  <div class="row">
 
-<div class="col-1"><nav class="navbar bg-body-tertiary fixed-top z-3" style="width: 70px; height:56px; padding-bottom: 10pxpx; padding-top: 0px;">
+
+<nav class="navbar bg-body-tertiary fixed-top z-3" style="width: 70px; height:56px; padding-bottom: 10pxpx; padding-top: 0px;">
   <div class="container-fluid d-flex justify-content-start">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -20,41 +20,64 @@
     </button>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Market</h5>
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item my-2">
+            <a class="nav-link active d-inline p-0" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item my-2">
+            <a class="nav-link d-inline p-0" href="#">Sign in</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+          <li class="nav-item dropdown my-2">
+            <a class="nav-link dropdown-toggle d-inline p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Computers</a></li>
+              <li><a class="dropdown-item" href="#">Smart phones</a></li>
+               <li><a class="dropdown-item" href="#">Laptops</a></li>
+                <li><a class="dropdown-item" href="#">Accesories</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else</a></li>
             </ul>
           </li>
+           <li class="nav-item my-2">
+            <a class="nav-link d-inline p-0" href="#">Gift cards</a>
+          </li>
+           <li class="nav-item  my-2">
+            <a class="nav-link d-inline p-0" href="#">Disscounts</a>
+          </li>
+          <li class="nav-item  my-2">
+            <a class="nav-link d-inline p-0" href="#">International Shopping</a>
+          </li>
+          
         </ul>
         <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Search for something.." aria-label="Search"/>
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+         
         </form>
+      
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16" style="width: 300px; margin-top:40px">
+  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+</svg>
+         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" style="margin-top: 69.5px; ">
+            <li class="nav-item">
+            <a class="nav-link d-inline p-0" href="#">Contact Us!</a>
+          </li>
+          </ul>
       </div>
     </div>
   </div>
-</nav></div>
+</nav>
 
-<div class="col-11"><nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top z-2" style="margin-left: 70px;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top z-2" style="margin-left: 70px;">
   <div class="container-fluid d-flex justify-content-start z-3">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,30 +89,35 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Shop</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Items
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Items on Sale</a></li>
+            <li><a class="dropdown-item" href="#">Items on Credit</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Something else..</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <li class="nav-item"><div class="d-flex align-items-center">
+          <a class="nav-link disabled" aria-disabled="true">My Cart</a> 
+          <svg style="opacity: 0.5;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+</svg>
+          </div>
+
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Search.." aria-label="Search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
       </form>
     </div>
   </div>
-</nav></div>
+</nav>
 
 
   </div>
@@ -98,7 +126,7 @@
     <!-- Check highlited lines for Explaination -->
 
 
-    
+
     <!-- Bootstrap 5.3 JS with Popper -->
 <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  </body>
 </html>
